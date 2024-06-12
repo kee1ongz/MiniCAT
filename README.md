@@ -1,7 +1,7 @@
 # MiniCAT
 Mini-program Cross Page Request Forgery (CPRF) Analysis Tool.
 
-#Citation
+# Citation
 If you create a research work that uses our work, please cite our paper :)
 '''
 @inproceedings{MiniCAT:CCS,
