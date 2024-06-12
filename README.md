@@ -1,5 +1,5 @@
 # MiniCAT
-Mini-program Cross Page Request Forgery (CPRF) Analysis Tool.
+Mini-program Cross Page Request Forgery (CPRF) Analysis Tool. (TODO)
 
 # Citation
 If you create a research work that uses our work, please cite our paper :)
