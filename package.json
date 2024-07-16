@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "wxml-to-html": "^1.0.2"
+  }
+}

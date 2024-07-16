@@ -1,0 +1,60 @@
+{
+	"folders": [
+		{
+			"path": "codeql-custom-queries-cpp"
+		},
+		{
+			"path": "codeql-custom-queries-csharp"
+		},
+		{
+			"path": "codeql-custom-queries-go"
+		},
+		{
+			"path": "codeql-custom-queries-java"
+		},
+		{
+			"path": "codeql-custom-queries-javascript"
+		},
+		{
+			"path": "codeql-custom-queries-python"
+		},
+		{
+			"path": "codeql-custom-queries-ruby"
+		},
+		{
+			"path": "ql"
+		},
+		{
+			"name": "[jstest source archive]",
+			"uri": "codeql-zip-archive://1-50/e:\\weapp\\codeql_test\\miniprogram-1\\jstest\\src.zip"
+		},
+		{
+			"name": "[jstest_lifesmartA source archive]",
+			"uri": "codeql-zip-archive://1-58/e:\\weapp\\codeql_test\\lifesmarta\\jstest_lifesmartA\\src.zip"
+		},
+		{
+			"name": "[mytest_oklok source archive]",
+			"uri": "codeql-zip-archive://1-55/e:\\weapp\\oklok1023\\_1027500618_45\\mytest_oklok\\src.zip"
+		},
+		{
+			"name": "[mytest_01 source archive]",
+			"uri": "codeql-zip-archive://1-83/e:\\weapp\\JavaWeb-WeChatMini-master\\wechatmini\\examination_system\\mytest_01\\src.zip"
+		},
+		{
+			"name": "[mytest_yxjg source archive]",
+			"uri": "codeql-zip-archive://1-55/e:\\weapp\\blizzard\\_-1438017261_217\\mytest_yxjg\\src.zip"
+		},
+		{
+			"name": "[wxe186e23f5a8f0dbf_db source archive]",
+			"uri": "codeql-zip-archive://1-100/e:\\weapp\\codeql_test\\raw_miniapp_wx\\test\\wxe186e23f5a8f0dbf\\test_dec1\\wxe186e23f5a8f0dbf_db\\src.zip"
+		},
+		{
+			"name": "[oklok_reborn source archive]",
+			"uri": "codeql-zip-archive://1-40/e:\\weapp\\oklok1023\\oklok_reborn\\src.zip"
+		}
+	],
+	"settings": {
+		"omnisharp.autoStart": false,
+		"codeQL.runningQueries.autoSave": true
+	}
+}

@@ -1,0 +1,6 @@
+<official-account></official-account>
+
+我是小程序
+ <view class="section__ctn">
+    <image mode="{{item.mode}}" src="https://file.fooww.com/groupa/M00/06/58/wKgBYF0cAQ2ALwH2AAXV3DWEhoc897.jpg" style="width: 200px; height: 200px; background-color: #eeeeee;"></image>
+</view>

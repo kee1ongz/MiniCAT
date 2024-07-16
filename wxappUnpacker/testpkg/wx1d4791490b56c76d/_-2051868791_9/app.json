@@ -1,0 +1,26 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/logs/logs",
+        "pages/official/official",
+        "pages/redirectTo/redirectTo",
+        "pages/phoneNumAuth/phoneNumAuth"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#ffffff",
+        "navigationBarTitleText": "通山楼市网|通山房产网|通山房地产综合服务平台|21世纪不动产旗下网站",
+        "navigationBarTextStyle": "black",
+        "enablePullDownRefresh": "true"
+    },
+    "networkTimeout": {
+        "request": 10000,
+        "downloadFile": 10000
+    },
+    "navigateToMiniProgramAppIdList": [
+        "wxff896b72df04748f",
+        "wxfb20882005200319",
+        "wx7c2dabf6d1f6e026",
+        "wxddbc3f111bf62f3b"
+    ]
+}

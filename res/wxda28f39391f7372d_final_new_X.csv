@@ -1,0 +1,644 @@
+index,sink,source,raw_filepath,function,wxml_filepath,wxml_element,js_E2A_flag,wxml_E2A_flag,session_check_flag
+165,"""/pages/index/deviceUpdate/deviceUpdate?param="" + JSON.stringify(t)_#T3$toDeviceUpdate","{
+                            _id: this.blue.device._id,
+                            mac: this.blue.device.mac,
+                            secretKey: this.blue.device.secretKey,
+                            pword: this.blue.device.pword,
+                            user: this.blue.device.user._id,
+                            versionType: this.blue.device.versionType || ""7E"",
+                            versionBlue: this.blue.device.version || """",
+                            versionFinger: this.blue.device.versionFinger || """"
+                        };
+                        ",{'E:/MiniCAT_Linux_sync/dec_dir/wxda28f39391f7372d_dec/pages/index/deviceDetail/deviceDetail.js'},toDeviceUpdate,E:/MiniCAT_Linux_sync/dec_dir/wxda28f39391f7372d_dec/pages/index/deviceDetail/deviceDetail.wxml,"<view class=""ub ub-ver ubgc-while upad-40 umar-40 ubor-r10"">
+                        <view class=""ub ub-ver ub-f1 "">
+                            <view class=""ub ub-pc ufs-32 "">{{lan.setting}}</view>
+                            <view class=""ub ub-ver ubgc-while uw  umar-t40"">
+                                <view class=""ub ub-ver"" wx:if=""{{deviceMaster==1}}"">
+                                    <button bindtap=""__e"" class=""ubgc-black1 umar-t40"" data-event-opts=""{{[ [ 'tap',[ [ 'showPopup',['update'] ] ] ] ]}}"">{{lan.edit_name}}</button>
+                                    <button bindtap=""__e"" class=""ubgc-black3 umar-t40"" data-event-opts=""{{[ [ 'tap',[ ['toDeviceUntie'] ] ] ]}}"">{{lan.unbind}}</button>
+                                    <button bindtap=""__e"" class=""ubgc-black4 umar-t40"" data-event-opts=""{{[ [ 'tap',[ ['toDeviceUpdate'] ] ] ]}}"" wx:if=""{{blue.isUpdate}}"">{{lan.update}}</button>
+                                    <button bindtap=""__e"" class=""ubgc-black4 umar-t40"" data-event-opts=""{{[ [ 'tap',[ [ 'showPopup',['replaceAdmin'] ] ] ] ]}}"">{{lanBase.txtUpdateAdmin||'更换管理员'}}</button>
+                                    <view class=""ub ub-ac umar-t40 uc-black-easy"" wx:if=""{{deviceAuth.isSettingAutoClose}}"">
+                                        <view class=""ub umar-r10"">{{(lanBase.txtAutoClose||'自动关锁')+'：'}}</view>
+                                        <switch bindchange=""__e"" checked=""{{blue.isAutoClose=='1'}}"" data-event-opts=""{{[ [ 'change',[ [ 'autoCloseChange',['$event'] ] ] ] ]}}""></switch>
+                                    </view>
+                                </view>
+                                <button bindtap=""__e"" class=""ubgc-black4 umar-t40"" data-event-opts=""{{[ [ 'tap',[ ['toUploadDeviceLogs'] ] ] ]}}"">{{lanBase.txtSubmitLog||'提交日志'}}</button>
+                                <view class=""ub ub-ac umar-t40 uc-black-easy"" wx:if=""{{blue.isFastAuth}}"">
+                                    <view class=""ub umar-r10"">{{'蓝牙钥匙开关'+'：'}}</view>
+                                    <switch bindchange=""__e"" checked=""{{blue.isFastValue=='1'}}"" data-event-opts=""{{[ [ 'change',[ [ 'fastAuthChange',['$event'] ] ] ] ]}}""></switch>
+                                </view>
+                            </view>
+                        </view>
+                    </view>
+                    <view ",T3,F1,S1
+85,"""/pages/index/deviceUseRecord/deviceUseRecord?param="" + JSON.stringify(t)_#T3$toUseRecord","{
+                            _id: this.param._id,
+                            device: {
+                                _id: this.blue.device._id,
+                                mac: this.blue.device.mac,
+                                secretKey: this.blue.device.secretKey,
+                                electricity: this.blue.device.electricity || """",
+                                user: this.blue.device.user._id,
+                                isNewDevice: this.blue.isNewDevice
+                            }
+                        };
+                        ",{'E:/MiniCAT_Linux_sync/dec_dir/wxda28f39391f7372d_dec/pages/index/deviceMFDetail/deviceMFDetail.js'},toUseRecord,E:/MiniCAT_Linux_sync/dec_dir/wxda28f39391f7372d_dec/pages/index/deviceMFDetail/deviceMFDetail.wxml,"<view class=""ub uc-while umar-t40"">
+                    <view class=""ub ub-ver ub-ac ub-f1"">
+                        <view bindtap=""__e"" class=""ub ub-pc ub-ac  ubor-r uw-120 uh-120 itemBg"" data-event-opts=""{{[ [ 'tap',[ [ 'toUseRecord',['$event'] ] ] ] ]}}"">
+                            <view class=""iconfont icon-liulanjilu  _i"" style=""font-size:60rpx;""></view>
+                        </view>
+                        <view class=""ub ub-pc umar-t20"">使用记录</view>
+                    </view>
+                    <view class=""ub ub-ver ub-ac ub-f1"">
+                        <view bindtap=""__e"" class=""ub ub-pc ub-ac  ubor-r uw-120 uh-120 itemBg"" data-event-opts=""{{[ [ 'tap',[ [ 'toAuthManage',['$event'] ] ] ] ]}}"">
+                            <view class=""iconfont icon-quanxianziyuan  _i"" style=""font-size:60rpx;""></view>
+                        </view>
+                        <view class=""ub ub-pc umar-t20"">授权管理</view>
+                    </view>
+                </view>
+            </view>
+",T3,F3,S1
+203,"""/pages/index/devicePwd/devicePwd?param="" + JSON.stringify(t)_#T3$toPwdManage","{
+                            _id: this.blue.device._id,
+                            code: this.blue.device.code,
+                            mac: this.blue.device.mac,
+                            secretKey: this.blue.device.secretKey,
+                            pword: this.blue.device.pword
+                        };
+                        ",{'E:/MiniCAT_Linux_sync/dec_dir/wxda28f39391f7372d_dec/pages/index/deviceDetail/deviceDetail.js'},toPwdManage,E:/MiniCAT_Linux_sync/dec_dir/wxda28f39391f7372d_dec/pages/index/deviceDetail/deviceDetail.wxml,"<view class=""uw uc-while umar-t20"" wx:if=""{{deviceMaster==1}}"">
+                <view class=""uitem-3"" wx:if=""{{deviceAuth.isFinger}}"">
+                    <view bindtap=""__e"" class=""ub ub-ver ub-ac ub-pc upad-20 ub-f1 utools-bg"" data-event-opts=""{{[ [ 'tap',[ ['toDeviceFinger'] ] ] ]}}"">
+                        <view class=""ub ub-pc ub-ac  ubor-r uw-120 uh-120 utools-img"">
+                            <view class=""uabs-center iconfont icon-zhiwenjiesuo  _i"" style=""font-size:60rpx;""></view>
+                        </view>
+                        <view class=""ub ub-pc umar-t10"">{{lanBase.txtFingerSetting||'指纹设置'}}</view>
+                    </view>
+                </view>
+                <view class=""uitem-3"" wx:if=""{{deviceAuth.isPWord}}"">
+                    <view bindtap=""__e"" class=""ub ub-ver ub-ac ub-pc upad-20 ub-f1 utools-bg"" data-event-opts=""{{[ [ 'tap',[ ['toPwdManage'] ] ] ]}}"">
+                        <view class=""ub ub-pc ub-ac  ubor-r uw-120 uh-120 "">
+                            <view class=""uabs-center iconfont icon-form  _i"" style=""font-size:60rpx;""></view>
+                        </view>
+                        <view class=""ub ub-pc umar-t10"">{{lanBase.txtPWordSetting||'密码设置'}}</view>
+                    </view>
+                </view>
+                <view class=""uitem-3 "" wx:if=""{{deviceAuth.isIC}}"">
+                    <view bindtap=""__e"" class=""ub ub-ver ub-ac ub-pc upad-20 ub-f1 utools-bg"" data-event-opts=""{{[ [ 'tap',[ ['toICManage'] ] ] ]}}"">
+                        <view class=""ub ub-pc ub-ac  ubor-r uw-120 uh-120 "">
+                            <view class=""uabs-center iconfont icon-ICqia _i"" style=""font-size:76rpx;""></view>
+                        </view>
+                        <view class=""ub ub-pc umar-t10"">{{lanBase.txtICSetting||'IC卡设置'}}</view>
+                    </view>
+                </view>
+                <view class=""uitem-3 "" wx:if=""{{deviceAuth.isFast}}"">
+                    <view bindtap=""__e"" class=""ub ub-ver ub-ac ub-pc upad-20 ub-f1 utools-bg"" data-event-opts=""{{[ [ 'tap',[ ['toFastManage'] ] ] ]}}"">
+                        <view class=""ub ub-pc ub-ac ubor-r uw-120 uh-120 "">
+                            <image class=""uabs-center uh-100"" mode=""heightFix"" src=""/static/imgs/fast.png""></image>
+                        </view>
+                        <view class=""ub ub-pc umar-t10"">{{lanBase.txtFastSetting||'蓝牙钥匙'}}</view>
+                    </view>
+                </view>
+                <view class=""uitem-3 "">
+                    <view bindtap=""__e"" class=""ub ub-ver ub-ac ub-pc upad-20 ub-f1 utools-bg"" data-event-opts=""{{[ [ 'tap',[ ['toUseRecord'] ] ] ]}}"">
+                        <view class=""ub ub-pc ub-ac  ubor-r uw-120 uh-120 "">
+                            <view class=""uabs-center iconfont icon-liulanjilu  _i"" style=""font-size:60rpx;""></view>
+                        </view>
+                        <view class=""ub ub-pc umar-t10"">{{lan.use_record||'使用记录'}}</view>
+                    </view>
+                </view>
+                <view class=""uitem-3"">
+                    <view bindtap=""__e"" class=""ub ub-ver ub-ac ub-pc upad-20 ub-f1 utools-bg"" data-event-opts=""{{[ [ 'tap',[ ['toAuthManage'] ] ] ]}}"">
+                        <view class=""ub ub-pc ub-ac  ubor-r uw-120 uh-120 "">
+                            <view class=""uabs-center iconfont icon-quanxianziyuan  _i"" style=""font-size:60rpx;""></view>
+                        </view>
+                        <view class=""ub ub-pc umar-t10"">{{lan.auth_manage}}</view>
+                    </view>
+                </view>
+                <view class=""uitem-3 "" wx:if=""{{deviceAuth.isFast}}"">
+                    <view bindtap=""__e"" class=""ub ub-ver ub-ac ub-pc upad-20 ub-f1 utools-bg"" data-event-opts=""{{[ [ 'tap',[ ['toFastManage'] ] ] ]}}"">
+                        <view class=""ub ub-pc ub-ac ubor-r uw-120 uh-120 "">
+                            <image class=""uabs-center uh-100"" mode=""heightFix"" src=""/static/imgs/fast.png""></image>
+                        </view>
+                        <view class=""ub ub-pc umar-t10"">{{lanBase.txtFastSetting||'手机钥匙'}}</view>
+                    </view>
+                </view>
+            </view>
+            <view ",T3,F1,S1
+123,"""/pages/shop/goodsSettlement/goodsSettlement?param="" + JSON.stringify(e)_#T3$toSubmit","{
+                            _id: o._id,
+                            code: o.code,
+                            name: o.name,
+                            img: o.img,
+                            price: o.price,
+                            marketPrice: o.marketPrice
+                        };
+                        ",{'E:/MiniCAT_Linux_sync/dec_dir/wxda28f39391f7372d_dec/pages/shop/goodsDetail/goodsDetail.js'},toSubmit,E:/MiniCAT_Linux_sync/dec_dir/wxda28f39391f7372d_dec/pages/shop/goodsDetail/goodsDetail.wxml,"<button bindtap=""__e"" class=""ub ub-pc ub-ac ub-f1 uw-200 ubgc-main ufs-32 uc-while upad-20 "" data-event-opts=""{{[ [ 'tap',[ [ 'toSubmit',['$event'] ] ] ] ]}}"" disabled=""{{button.loading}}"" loading=""{{button.loading}}"">立即购买<",T3,F3,S1
+60,"""/pages/index/deviceMFFinger/deviceMFFinger?param="" + JSON.stringify(o)_#T2$toDeviceFinger","{
+                                _id: this.blue.device._id,
+                                mac: this.blue.device.mac,
+                                secretKey: this.blue.device.secretKey,
+                                pword: this.blue.device.pword
+                            };
+                            ",{'E:/MiniCAT_Linux_sync/dec_dir/wxda28f39391f7372d_dec/pages/index/deviceMFDetail/deviceMFDetail.js'},toDeviceFinger,E:/MiniCAT_Linux_sync/dec_dir/wxda28f39391f7372d_dec/pages/index/deviceMFDetail/deviceMFDetail.wxml,"<view class=""ub uc-while umar-t40"" wx:if=""{{isOne=='0'}}"">
+                    <view class=""ub ub-ver ub-ac ub-f1"" wx:if=""{{blue.device.barcodeType=='F'||blue.device.barcodeType=='D'}}"">
+                        <view bindtap=""__e"" class=""ub ub-pc ub-ac  ubor-r uw-120 uh-120 itemBg"" data-event-opts=""{{[ [ 'tap',[ [ 'toDeviceFinger',['$event'] ] ] ] ]}}"">
+                            <view class=""iconfont icon-zhiwenjiesuo  _i"" style=""font-size:60rpx;""></view>
+                        </view>
+                        <view class=""ub ub-pc umar-t20"">指纹管理</view>
+                    </view>
+                    <view class=""ub ub-ver ub-ac ub-f1"">
+                        <view bindtap=""__e"" class=""ub ub-pc ub-ac  ubor-r uw-120 uh-120 itemBg"" data-event-opts=""{{[ [ 'tap',[ [ 'toDevicePwd',['$event'] ] ] ] ]}}"">
+                            <view class=""iconfont icon-key  _i"" style=""font-size:60rpx;""></view>
+                        </view>
+                        <view class=""ub ub-pc umar-t20"">密码管理</view>
+                    </view>
+                    <view class=""ub ub-ver ub-ac ub-f1"">
+                        <view bindtap=""__e"" class=""ub ub-pc ub-ac  ubor-r uw-120 uh-120 itemBg"" data-event-opts=""{{[ [ 'tap',[ [ 'toDeviceIC',['$event'] ] ] ] ]}}"">
+                            <view class=""iconfont icon-yewutubiao_yiqiatong  _i"" style=""font-size:60rpx;""></view>
+                        </view>
+                        <view class=""ub ub-pc umar-t20"">IC卡管理</view>
+                    </view>
+                </view>
+                <view ",T2,F1,S1
+182,"""/pages/index/deviceFinger/deviceFinger?param="" + JSON.stringify(t)_#T3$toDeviceFinger","{
+                            _id: this.blue.device._id,
+                            mac: this.blue.device.mac,
+                            secretKey: this.blue.device.secretKey,
+                            pword: this.blue.device.pword
+                        };
+                        ",{'E:/MiniCAT_Linux_sync/dec_dir/wxda28f39391f7372d_dec/pages/index/deviceDetail/deviceDetail.js'},toDeviceFinger,E:/MiniCAT_Linux_sync/dec_dir/wxda28f39391f7372d_dec/pages/index/deviceDetail/deviceDetail.wxml,"<view class=""uw uc-while umar-t20"" wx:if=""{{deviceMaster==1}}"">
+                <view class=""uitem-3"" wx:if=""{{deviceAuth.isFinger}}"">
+                    <view bindtap=""__e"" class=""ub ub-ver ub-ac ub-pc upad-20 ub-f1 utools-bg"" data-event-opts=""{{[ [ 'tap',[ ['toDeviceFinger'] ] ] ]}}"">
+                        <view class=""ub ub-pc ub-ac  ubor-r uw-120 uh-120 utools-img"">
+                            <view class=""uabs-center iconfont icon-zhiwenjiesuo  _i"" style=""font-size:60rpx;""></view>
+                        </view>
+                        <view class=""ub ub-pc umar-t10"">{{lanBase.txtFingerSetting||'指纹设置'}}</view>
+                    </view>
+                </view>
+                <view class=""uitem-3"" wx:if=""{{deviceAuth.isPWord}}"">
+                    <view bindtap=""__e"" class=""ub ub-ver ub-ac ub-pc upad-20 ub-f1 utools-bg"" data-event-opts=""{{[ [ 'tap',[ ['toPwdManage'] ] ] ]}}"">
+                        <view class=""ub ub-pc ub-ac  ubor-r uw-120 uh-120 "">
+                            <view class=""uabs-center iconfont icon-form  _i"" style=""font-size:60rpx;""></view>
+                        </view>
+                        <view class=""ub ub-pc umar-t10"">{{lanBase.txtPWordSetting||'密码设置'}}</view>
+                    </view>
+                </view>
+                <view class=""uitem-3 "" wx:if=""{{deviceAuth.isIC}}"">
+                    <view bindtap=""__e"" class=""ub ub-ver ub-ac ub-pc upad-20 ub-f1 utools-bg"" data-event-opts=""{{[ [ 'tap',[ ['toICManage'] ] ] ]}}"">
+                        <view class=""ub ub-pc ub-ac  ubor-r uw-120 uh-120 "">
+                            <view class=""uabs-center iconfont icon-ICqia _i"" style=""font-size:76rpx;""></view>
+                        </view>
+                        <view class=""ub ub-pc umar-t10"">{{lanBase.txtICSetting||'IC卡设置'}}</view>
+                    </view>
+                </view>
+                <view class=""uitem-3 "" wx:if=""{{deviceAuth.isFast}}"">
+                    <view bindtap=""__e"" class=""ub ub-ver ub-ac ub-pc upad-20 ub-f1 utools-bg"" data-event-opts=""{{[ [ 'tap',[ ['toFastManage'] ] ] ]}}"">
+                        <view class=""ub ub-pc ub-ac ubor-r uw-120 uh-120 "">
+                            <image class=""uabs-center uh-100"" mode=""heightFix"" src=""/static/imgs/fast.png""></image>
+                        </view>
+                        <view class=""ub ub-pc umar-t10"">{{lanBase.txtFastSetting||'蓝牙钥匙'}}</view>
+                    </view>
+                </view>
+                <view class=""uitem-3 "">
+                    <view bindtap=""__e"" class=""ub ub-ver ub-ac ub-pc upad-20 ub-f1 utools-bg"" data-event-opts=""{{[ [ 'tap',[ ['toUseRecord'] ] ] ]}}"">
+                        <view class=""ub ub-pc ub-ac  ubor-r uw-120 uh-120 "">
+                            <view class=""uabs-center iconfont icon-liulanjilu  _i"" style=""font-size:60rpx;""></view>
+                        </view>
+                        <view class=""ub ub-pc umar-t10"">{{lan.use_record||'使用记录'}}</view>
+                    </view>
+                </view>
+                <view class=""uitem-3"">
+                    <view bindtap=""__e"" class=""ub ub-ver ub-ac ub-pc upad-20 ub-f1 utools-bg"" data-event-opts=""{{[ [ 'tap',[ ['toAuthManage'] ] ] ]}}"">
+                        <view class=""ub ub-pc ub-ac  ubor-r uw-120 uh-120 "">
+                            <view class=""uabs-center iconfont icon-quanxianziyuan  _i"" style=""font-size:60rpx;""></view>
+                        </view>
+                        <view class=""ub ub-pc umar-t10"">{{lan.auth_manage}}</view>
+                    </view>
+                </view>
+                <view class=""uitem-3 "" wx:if=""{{deviceAuth.isFast}}"">
+                    <view bindtap=""__e"" class=""ub ub-ver ub-ac ub-pc upad-20 ub-f1 utools-bg"" data-event-opts=""{{[ [ 'tap',[ ['toFastManage'] ] ] ]}}"">
+                        <view class=""ub ub-pc ub-ac ubor-r uw-120 uh-120 "">
+                            <image class=""uabs-center uh-100"" mode=""heightFix"" src=""/static/imgs/fast.png""></image>
+                        </view>
+                        <view class=""ub ub-pc umar-t10"">{{lanBase.txtFastSetting||'手机钥匙'}}</view>
+                    </view>
+                </view>
+            </view>
+            <view ",T3,F1,S1
+189,"""/pages/index/deviceCard/deviceCard?param="" + JSON.stringify(t)_#T3$toICManage","{
+                            _id: this.blue.device._id,
+                            mac: this.blue.device.mac,
+                            secretKey: this.blue.device.secretKey,
+                            pword: this.blue.device.pword
+                        };
+                        ",{'E:/MiniCAT_Linux_sync/dec_dir/wxda28f39391f7372d_dec/pages/index/deviceDetail/deviceDetail.js'},toICManage,E:/MiniCAT_Linux_sync/dec_dir/wxda28f39391f7372d_dec/pages/index/deviceDetail/deviceDetail.wxml,"<view class=""uw uc-while umar-t20"" wx:if=""{{deviceMaster==1}}"">
+                <view class=""uitem-3"" wx:if=""{{deviceAuth.isFinger}}"">
+                    <view bindtap=""__e"" class=""ub ub-ver ub-ac ub-pc upad-20 ub-f1 utools-bg"" data-event-opts=""{{[ [ 'tap',[ ['toDeviceFinger'] ] ] ]}}"">
+                        <view class=""ub ub-pc ub-ac  ubor-r uw-120 uh-120 utools-img"">
+                            <view class=""uabs-center iconfont icon-zhiwenjiesuo  _i"" style=""font-size:60rpx;""></view>
+                        </view>
+                        <view class=""ub ub-pc umar-t10"">{{lanBase.txtFingerSetting||'指纹设置'}}</view>
+                    </view>
+                </view>
+                <view class=""uitem-3"" wx:if=""{{deviceAuth.isPWord}}"">
+                    <view bindtap=""__e"" class=""ub ub-ver ub-ac ub-pc upad-20 ub-f1 utools-bg"" data-event-opts=""{{[ [ 'tap',[ ['toPwdManage'] ] ] ]}}"">
+                        <view class=""ub ub-pc ub-ac  ubor-r uw-120 uh-120 "">
+                            <view class=""uabs-center iconfont icon-form  _i"" style=""font-size:60rpx;""></view>
+                        </view>
+                        <view class=""ub ub-pc umar-t10"">{{lanBase.txtPWordSetting||'密码设置'}}</view>
+                    </view>
+                </view>
+                <view class=""uitem-3 "" wx:if=""{{deviceAuth.isIC}}"">
+                    <view bindtap=""__e"" class=""ub ub-ver ub-ac ub-pc upad-20 ub-f1 utools-bg"" data-event-opts=""{{[ [ 'tap',[ ['toICManage'] ] ] ]}}"">
+                        <view class=""ub ub-pc ub-ac  ubor-r uw-120 uh-120 "">
+                            <view class=""uabs-center iconfont icon-ICqia _i"" style=""font-size:76rpx;""></view>
+                        </view>
+                        <view class=""ub ub-pc umar-t10"">{{lanBase.txtICSetting||'IC卡设置'}}</view>
+                    </view>
+                </view>
+                <view class=""uitem-3 "" wx:if=""{{deviceAuth.isFast}}"">
+                    <view bindtap=""__e"" class=""ub ub-ver ub-ac ub-pc upad-20 ub-f1 utools-bg"" data-event-opts=""{{[ [ 'tap',[ ['toFastManage'] ] ] ]}}"">
+                        <view class=""ub ub-pc ub-ac ubor-r uw-120 uh-120 "">
+                            <image class=""uabs-center uh-100"" mode=""heightFix"" src=""/static/imgs/fast.png""></image>
+                        </view>
+                        <view class=""ub ub-pc umar-t10"">{{lanBase.txtFastSetting||'蓝牙钥匙'}}</view>
+                    </view>
+                </view>
+                <view class=""uitem-3 "">
+                    <view bindtap=""__e"" class=""ub ub-ver ub-ac ub-pc upad-20 ub-f1 utools-bg"" data-event-opts=""{{[ [ 'tap',[ ['toUseRecord'] ] ] ]}}"">
+                        <view class=""ub ub-pc ub-ac  ubor-r uw-120 uh-120 "">
+                            <view class=""uabs-center iconfont icon-liulanjilu  _i"" style=""font-size:60rpx;""></view>
+                        </view>
+                        <view class=""ub ub-pc umar-t10"">{{lan.use_record||'使用记录'}}</view>
+                    </view>
+                </view>
+                <view class=""uitem-3"">
+                    <view bindtap=""__e"" class=""ub ub-ver ub-ac ub-pc upad-20 ub-f1 utools-bg"" data-event-opts=""{{[ [ 'tap',[ ['toAuthManage'] ] ] ]}}"">
+                        <view class=""ub ub-pc ub-ac  ubor-r uw-120 uh-120 "">
+                            <view class=""uabs-center iconfont icon-quanxianziyuan  _i"" style=""font-size:60rpx;""></view>
+                        </view>
+                        <view class=""ub ub-pc umar-t10"">{{lan.auth_manage}}</view>
+                    </view>
+                </view>
+                <view class=""uitem-3 "" wx:if=""{{deviceAuth.isFast}}"">
+                    <view bindtap=""__e"" class=""ub ub-ver ub-ac ub-pc upad-20 ub-f1 utools-bg"" data-event-opts=""{{[ [ 'tap',[ ['toFastManage'] ] ] ]}}"">
+                        <view class=""ub ub-pc ub-ac ubor-r uw-120 uh-120 "">
+                            <image class=""uabs-center uh-100"" mode=""heightFix"" src=""/static/imgs/fast.png""></image>
+                        </view>
+                        <view class=""ub ub-pc umar-t10"">{{lanBase.txtFastSetting||'手机钥匙'}}</view>
+                    </view>
+                </view>
+            </view>
+            <view ",T3,F1,S1
+71,"""/pages/index/deviceMFPwd/deviceMFPwd?param="" + JSON.stringify(t)_#T3$toDevicePwd","{
+                            _id: this.blue.device._id,
+                            mac: this.blue.device.mac,
+                            secretKey: this.blue.device.secretKey,
+                            pword: this.blue.device.pword
+                        };
+                        ",{'E:/MiniCAT_Linux_sync/dec_dir/wxda28f39391f7372d_dec/pages/index/deviceMFDetail/deviceMFDetail.js'},toDevicePwd,E:/MiniCAT_Linux_sync/dec_dir/wxda28f39391f7372d_dec/pages/index/deviceMFDetail/deviceMFDetail.wxml,"<view class=""ub uc-while umar-t40"" wx:if=""{{isOne=='0'}}"">
+                    <view class=""ub ub-ver ub-ac ub-f1"" wx:if=""{{blue.device.barcodeType=='F'||blue.device.barcodeType=='D'}}"">
+                        <view bindtap=""__e"" class=""ub ub-pc ub-ac  ubor-r uw-120 uh-120 itemBg"" data-event-opts=""{{[ [ 'tap',[ [ 'toDeviceFinger',['$event'] ] ] ] ]}}"">
+                            <view class=""iconfont icon-zhiwenjiesuo  _i"" style=""font-size:60rpx;""></view>
+                        </view>
+                        <view class=""ub ub-pc umar-t20"">指纹管理</view>
+                    </view>
+                    <view class=""ub ub-ver ub-ac ub-f1"">
+                        <view bindtap=""__e"" class=""ub ub-pc ub-ac  ubor-r uw-120 uh-120 itemBg"" data-event-opts=""{{[ [ 'tap',[ [ 'toDevicePwd',['$event'] ] ] ] ]}}"">
+                            <view class=""iconfont icon-key  _i"" style=""font-size:60rpx;""></view>
+                        </view>
+                        <view class=""ub ub-pc umar-t20"">密码管理</view>
+                    </view>
+                    <view class=""ub ub-ver ub-ac ub-f1"">
+                        <view bindtap=""__e"" class=""ub ub-pc ub-ac  ubor-r uw-120 uh-120 itemBg"" data-event-opts=""{{[ [ 'tap',[ [ 'toDeviceIC',['$event'] ] ] ] ]}}"">
+                            <view class=""iconfont icon-yewutubiao_yiqiatong  _i"" style=""font-size:60rpx;""></view>
+                        </view>
+                        <view class=""ub ub-pc umar-t20"">IC卡管理</view>
+                    </view>
+                </view>
+                <view ",T3,F1,S1
+78,"""/pages/index/deviceMFIC/deviceMFIC?param="" + JSON.stringify(t)_#T3$toDeviceIC","{
+                            _id: this.blue.device._id,
+                            mac: this.blue.device.mac,
+                            secretKey: this.blue.device.secretKey,
+                            pword: this.blue.device.pword
+                        };
+                        ",{'E:/MiniCAT_Linux_sync/dec_dir/wxda28f39391f7372d_dec/pages/index/deviceMFDetail/deviceMFDetail.js'},toDeviceIC,E:/MiniCAT_Linux_sync/dec_dir/wxda28f39391f7372d_dec/pages/index/deviceMFDetail/deviceMFDetail.wxml,"<view class=""ub uc-while umar-t40"" wx:if=""{{isOne=='0'}}"">
+                    <view class=""ub ub-ver ub-ac ub-f1"" wx:if=""{{blue.device.barcodeType=='F'||blue.device.barcodeType=='D'}}"">
+                        <view bindtap=""__e"" class=""ub ub-pc ub-ac  ubor-r uw-120 uh-120 itemBg"" data-event-opts=""{{[ [ 'tap',[ [ 'toDeviceFinger',['$event'] ] ] ] ]}}"">
+                            <view class=""iconfont icon-zhiwenjiesuo  _i"" style=""font-size:60rpx;""></view>
+                        </view>
+                        <view class=""ub ub-pc umar-t20"">指纹管理</view>
+                    </view>
+                    <view class=""ub ub-ver ub-ac ub-f1"">
+                        <view bindtap=""__e"" class=""ub ub-pc ub-ac  ubor-r uw-120 uh-120 itemBg"" data-event-opts=""{{[ [ 'tap',[ [ 'toDevicePwd',['$event'] ] ] ] ]}}"">
+                            <view class=""iconfont icon-key  _i"" style=""font-size:60rpx;""></view>
+                        </view>
+                        <view class=""ub ub-pc umar-t20"">密码管理</view>
+                    </view>
+                    <view class=""ub ub-ver ub-ac ub-f1"">
+                        <view bindtap=""__e"" class=""ub ub-pc ub-ac  ubor-r uw-120 uh-120 itemBg"" data-event-opts=""{{[ [ 'tap',[ [ 'toDeviceIC',['$event'] ] ] ] ]}}"">
+                            <view class=""iconfont icon-yewutubiao_yiqiatong  _i"" style=""font-size:60rpx;""></view>
+                        </view>
+                        <view class=""ub ub-pc umar-t20"">IC卡管理</view>
+                    </view>
+                </view>
+                <view ",T3,F1,S1
+196,"""/pages/index/deviceFast/deviceFast?param="" + JSON.stringify(t)_#T3$toFastManage","{
+                            _id: this.blue.device._id,
+                            mac: this.blue.device.mac,
+                            secretKey: this.blue.device.secretKey,
+                            pword: this.blue.device.pword
+                        };
+                        ",{'E:/MiniCAT_Linux_sync/dec_dir/wxda28f39391f7372d_dec/pages/index/deviceDetail/deviceDetail.js'},toFastManage,E:/MiniCAT_Linux_sync/dec_dir/wxda28f39391f7372d_dec/pages/index/deviceDetail/deviceDetail.wxml,"<view class=""uw uc-while umar-t20"" wx:if=""{{deviceMaster==1}}"">
+                <view class=""uitem-3"" wx:if=""{{deviceAuth.isFinger}}"">
+                    <view bindtap=""__e"" class=""ub ub-ver ub-ac ub-pc upad-20 ub-f1 utools-bg"" data-event-opts=""{{[ [ 'tap',[ ['toDeviceFinger'] ] ] ]}}"">
+                        <view class=""ub ub-pc ub-ac  ubor-r uw-120 uh-120 utools-img"">
+                            <view class=""uabs-center iconfont icon-zhiwenjiesuo  _i"" style=""font-size:60rpx;""></view>
+                        </view>
+                        <view class=""ub ub-pc umar-t10"">{{lanBase.txtFingerSetting||'指纹设置'}}</view>
+                    </view>
+                </view>
+                <view class=""uitem-3"" wx:if=""{{deviceAuth.isPWord}}"">
+                    <view bindtap=""__e"" class=""ub ub-ver ub-ac ub-pc upad-20 ub-f1 utools-bg"" data-event-opts=""{{[ [ 'tap',[ ['toPwdManage'] ] ] ]}}"">
+                        <view class=""ub ub-pc ub-ac  ubor-r uw-120 uh-120 "">
+                            <view class=""uabs-center iconfont icon-form  _i"" style=""font-size:60rpx;""></view>
+                        </view>
+                        <view class=""ub ub-pc umar-t10"">{{lanBase.txtPWordSetting||'密码设置'}}</view>
+                    </view>
+                </view>
+                <view class=""uitem-3 "" wx:if=""{{deviceAuth.isIC}}"">
+                    <view bindtap=""__e"" class=""ub ub-ver ub-ac ub-pc upad-20 ub-f1 utools-bg"" data-event-opts=""{{[ [ 'tap',[ ['toICManage'] ] ] ]}}"">
+                        <view class=""ub ub-pc ub-ac  ubor-r uw-120 uh-120 "">
+                            <view class=""uabs-center iconfont icon-ICqia _i"" style=""font-size:76rpx;""></view>
+                        </view>
+                        <view class=""ub ub-pc umar-t10"">{{lanBase.txtICSetting||'IC卡设置'}}</view>
+                    </view>
+                </view>
+                <view class=""uitem-3 "" wx:if=""{{deviceAuth.isFast}}"">
+                    <view bindtap=""__e"" class=""ub ub-ver ub-ac ub-pc upad-20 ub-f1 utools-bg"" data-event-opts=""{{[ [ 'tap',[ ['toFastManage'] ] ] ]}}"">
+                        <view class=""ub ub-pc ub-ac ubor-r uw-120 uh-120 "">
+                            <image class=""uabs-center uh-100"" mode=""heightFix"" src=""/static/imgs/fast.png""></image>
+                        </view>
+                        <view class=""ub ub-pc umar-t10"">{{lanBase.txtFastSetting||'蓝牙钥匙'}}</view>
+                    </view>
+                </view>
+                <view class=""uitem-3 "">
+                    <view bindtap=""__e"" class=""ub ub-ver ub-ac ub-pc upad-20 ub-f1 utools-bg"" data-event-opts=""{{[ [ 'tap',[ ['toUseRecord'] ] ] ]}}"">
+                        <view class=""ub ub-pc ub-ac  ubor-r uw-120 uh-120 "">
+                            <view class=""uabs-center iconfont icon-liulanjilu  _i"" style=""font-size:60rpx;""></view>
+                        </view>
+                        <view class=""ub ub-pc umar-t10"">{{lan.use_record||'使用记录'}}</view>
+                    </view>
+                </view>
+                <view class=""uitem-3"">
+                    <view bindtap=""__e"" class=""ub ub-ver ub-ac ub-pc upad-20 ub-f1 utools-bg"" data-event-opts=""{{[ [ 'tap',[ ['toAuthManage'] ] ] ]}}"">
+                        <view class=""ub ub-pc ub-ac  ubor-r uw-120 uh-120 "">
+                            <view class=""uabs-center iconfont icon-quanxianziyuan  _i"" style=""font-size:60rpx;""></view>
+                        </view>
+                        <view class=""ub ub-pc umar-t10"">{{lan.auth_manage}}</view>
+                    </view>
+                </view>
+                <view class=""uitem-3 "" wx:if=""{{deviceAuth.isFast}}"">
+                    <view bindtap=""__e"" class=""ub ub-ver ub-ac ub-pc upad-20 ub-f1 utools-bg"" data-event-opts=""{{[ [ 'tap',[ ['toFastManage'] ] ] ]}}"">
+                        <view class=""ub ub-pc ub-ac ubor-r uw-120 uh-120 "">
+                            <image class=""uabs-center uh-100"" mode=""heightFix"" src=""/static/imgs/fast.png""></image>
+                        </view>
+                        <view class=""ub ub-pc umar-t10"">{{lanBase.txtFastSetting||'手机钥匙'}}</view>
+                    </view>
+                </view>
+            </view>
+            <view ",T3,F1,S1
+119,"""/pages/index/webView/webView?param="" + JSON.stringify(t)_#T3$toServicePage","{
+                            url: encodeURIComponent(""https://mp.weixin.qq.com/s/Mc-n-KX2qf28fJziIMklDw""),
+                            titile: ""关注公众号，咨询客服""
+                        };
+                        ",{'E:/MiniCAT_Linux_sync/dec_dir/wxda28f39391f7372d_dec/pages/person/person.js'},toServicePage,E:/MiniCAT_Linux_sync/dec_dir/wxda28f39391f7372d_dec/pages/person/person.wxml,"<view bindtap=""__e"" class=""ub ub-pc ub-ac ubgc-while ubor-r uw-88 uh-88"" data-event-opts=""{{[ [ 'tap',[ ['toServicePage'] ] ] ]}}"">
+                    <view class=""icon iconfont icon-comment ufs-48 uc-main _i""></view>
+                </view>
+                <view ",T3,F3,S1
+117,"""/pages/index/info/infoDetailNew/infoDetailNew?param="" + JSON.stringify(a)_#T2$toSelectMenu","{
+                                _id: 0 == t.language.indexOf(""zh"") ? ""ZWSYSM"" : ""YWSYSM"",
+                                isImgNot: 1
+                            };
+                            ",{'E:/MiniCAT_Linux_sync/dec_dir/wxda28f39391f7372d_dec/pages/person/person.js'},toSelectMenu,E:/MiniCAT_Linux_sync/dec_dir/wxda28f39391f7372d_dec/pages/person/person.wxml,"<view bindtap=""__e"" class=""ub ub-ac uh-88"" data-event-opts=""{{[ [ 'tap',[ [ 'toSelectMenu',['$0'],[ [ ['menu.dataTwo','',index] ] ] ] ] ] ]}}"" wx:for=""{{menu.dataTwo}}"" wx:key=""index"">
+                <view class=""ub-f1 umar-l20"">{{item.name}}</view>
+                <vuew bind:__l=""__l"" class=""ub ufs-28 uc-grey"" vueId=""{{'e8437cc0-2-'+index}}"" vueSlots=""{{['default']}}"">{{item.desc}}</vuew>
+                <view class=""icon iconfont icon-enter ufs-40 uc-grey _i""></view>
+            </view>
+        </view>
+",T2,F2,S1
+117,"""/pages/index/info/infoDetailNew/infoDetailNew?param="" + JSON.stringify(a)_#T2$toSelectMenu","{
+                                _id: 0 == t.language.indexOf(""zh"") ? ""ZWSYSM"" : ""YWSYSM"",
+                                isImgNot: 1
+                            };
+                            ",{'E:/MiniCAT_Linux_sync/dec_dir/wxda28f39391f7372d_dec/pages/person/person.js'},toSelectMenu,E:/MiniCAT_Linux_sync/dec_dir/wxda28f39391f7372d_dec/pages/person/person.wxml,"<view bindtap=""__e"" class=""ub ub-ac uh-88"" data-event-opts=""{{[ [ 'tap',[ [ 'toSelectMenu',['$0'],[ [ ['menu.data','',index] ] ] ] ] ] ]}}"" wx:for=""{{menu.data}}"" wx:key=""index"">
+                <view class=""ub-f1 umar-l20"">{{item.name}}</view>
+                <vuew bind:__l=""__l"" class=""ub ufs-28 uc-grey"" vueId=""{{'e8437cc0-1-'+index}}"" vueSlots=""{{['default']}}"">{{item.desc}}</vuew>
+                <view class=""icon iconfont icon-enter ufs-40 uc-grey _i""></view>
+            </view>
+        </view>
+",T2,F2,S1
+52,"""/pages/index/deviceAuthTemp/deviceAuthTemp?param="" + encodeURIComponent(JSON.stringify(n))_#T3$toAddAuthView","{
+                            _id: this.param._id,
+                            type: e
+                        };
+                        ",{'E:/MiniCAT_Linux_sync/dec_dir/wxda28f39391f7372d_dec/pages/index/deviceAuth/deviceAuth.js'},toAddAuthView,E:/MiniCAT_Linux_sync/dec_dir/wxda28f39391f7372d_dec/pages/index/deviceAuth/deviceAuth.wxml,"<button bindtap=""__e"" class=""ub ub-pc  ub-f1 umar-20"" data-event-opts=""{{[ [ 'tap',[ [ 'toAddAuthView',['2'] ] ] ] ]}}"">{{lan.but_addTempAuth}}</button>",T3,F3,S1
+52,"""/pages/index/deviceAuthTemp/deviceAuthTemp?param="" + encodeURIComponent(JSON.stringify(n))_#T3$toAddAuthView","{
+                            _id: this.param._id,
+                            type: e
+                        };
+                        ",{'E:/MiniCAT_Linux_sync/dec_dir/wxda28f39391f7372d_dec/pages/index/deviceAuth/deviceAuth.js'},toAddAuthView,E:/MiniCAT_Linux_sync/dec_dir/wxda28f39391f7372d_dec/pages/index/deviceAuth/deviceAuth.wxml,"<button bindtap=""__e"" class=""ub ub-pc  ub-f1 umar-20 "" data-event-opts=""{{[ [ 'tap',[ [ 'toAddAuthView',['1'] ] ] ] ]}}"">{{lan.but_addCycleAuth}}</button>",T3,F3,S1
+113,"""/pages/person/login?param="" + JSON.stringify(t)_#T3$toSubmit","{
+                                        phone: n.form.phone
+                                    };
+                                    ",{'E:/MiniCAT_Linux_sync/dec_dir/wxda28f39391f7372d_dec/pages/person/register/register.js'},toSubmit,E:/MiniCAT_Linux_sync/dec_dir/wxda28f39391f7372d_dec/pages/person/register/register.wxml,"<button bindtap=""__e"" class=""ub ub-pc ubgc-blue umar-t40"" data-event-opts=""{{[ [ 'tap',[ [ 'toSubmit',['$event'] ] ] ] ]}}"">{{lan.btn_register}}</button>",T3,F3,S1
+152,"""/pages/index/deviceDetail/deviceDetail?param="" + JSON.stringify(n)_#T3$toListItem","{
+                            _id: i._id,
+                            noAuto: !0
+                        };
+                        ",{'E:/MiniCAT_Linux_sync/dec_dir/wxda28f39391f7372d_dec/pages/index/index.js'},toListItem,E:/MiniCAT_Linux_sync/dec_dir/wxda28f39391f7372d_dec/pages/index/index.wxml,"<view bindtap=""__e"" class=""{{['uitem-1',item.g1>1?'uitem-2':'']}}"" data-event-opts=""{{[ [ 'tap',[ [ 'toListItem',[index] ] ] ] ]}}"" wx:for=""{{$root.l0}}"" wx:key=""index"">
+                        <view class=""{{['ub','ub-ver','ub-f1','upad-20','uh-180',index%2==0?'ulist-left':'ulist-right']}}"" style=""{{'border-radius:32rpx;'+(item[$orig].isOpen=='1'?'color:#ffffff;background-color: #3C7699;':'background-color: #495365;')}}"">
+                            <view class=""ub "">
+                                <view class=""ub  ub-f1"">
+                                    <image class=""uw-88 uh-88"" mode=""aspectFit"" src=""{{item.g2}}""></image>
+                                </view>
+                                <view class=""ub ub-ver ub-ae uc-grey _div"">
+                                    <view class=""ub  ufs-20 uc-grey"">
+                                        <view class=""ub iconfont icon-friendfamous ufs-32 umar-r10 uc-orange _i"" wx:if=""{{user._id==item[$orig].user}}""></view>
+                                        <view class=""ub iconfont icon-people ufs-32 umar-r10 _i"" wx:if=""{{user._id!=item[$orig].user}}""></view>
+                                        <view class=""ub iconfont icon-unlock ufs-32 umar-r10 _i""></view>
+                                        <label class=""ufs-24  _span"">{{item[$orig].useCount||0}}</label>
+                                    </view>
+                                    <view class=""ub ub-f1 ub-pe ufs-24 umar-t10"">{{item[$orig].code||''}}</view>
+                                </view>
+                            </view>
+                            <view class=""ub ub-f1"">
+                                <view class=""ub ufs-24 uc-while uc-b umar-r20"">{{item[$orig].remark||item[$orig].name||lan.list_remark}}</view>
+                            </view>
+                            <view class=""ub ub-ver"">
+                                <view class=""ub uw ub-pe uc-grey ufs-22 upad-10"">
+                                    <view class=""ub"" wx:if=""{{item[$orig].electricityTime}}"">{{item.g3}}</view>{{''+item[$orig].electricity+'%'}}</view>
+                                <view class=""uw uh-10 ubor-r"" style=""background-color:#2B2F3D;"">
+                                    <view class=""{{['ubgc-red','uh','ubor-r',item[$orig].electricity>10?'ubgc-blue':'']}}"" style=""{{'width:'+item[$orig].electricity+'%'+';'}}""></view>
+                                </view>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+",T3,F1,S1
+156,"""/pages/index/deviceDetail/deviceDetail?param="" + JSON.stringify(n)_#T3$toListTempItem","{
+                            _id: i._id,
+                            noAuto: !0
+                        };
+                        ",{'E:/MiniCAT_Linux_sync/dec_dir/wxda28f39391f7372d_dec/pages/index/index.js'},toListTempItem,E:/MiniCAT_Linux_sync/dec_dir/wxda28f39391f7372d_dec/pages/index/index.wxml,"<view bindtap=""__e"" class=""{{['uitem-1',listTemp.count+list.count>1?'uitem-2':'']}}"" data-event-opts=""{{[ [ 'tap',[ [ 'toListTempItem',[index] ] ] ] ]}}"" wx:for=""{{$root.l1}}"" wx:key=""index"">
+                        <view class=""{{['ub','ub-ver','ub-f1','upad-20','uh-180',index%2==0?'ulist-left':'ulist-right']}}"" style=""border-radius:32rpx;background-color:#495365;"">
+                            <view class=""ub "">
+                                <view class=""ub  ub-f1"">
+                                    <image class=""uw-88 uh-88"" mode=""aspectFit"" src=""{{item.g4}}""></image>
+                                </view>
+                                <view class=""ub ub-ver ub-ae uc-grey _div"">
+                                    <view class=""ub  ufs-20 uc-grey"">
+                                        <view class=""ub iconfont icon-friendfamous ufs-32 umar-r10 uc-orange _i"" wx:if=""{{user._id==item[$orig].user}}""></view>
+                                        <view class=""ub iconfont icon-people ufs-32 umar-r10 _i"" wx:if=""{{user._id!=item[$orig].user}}""></view>
+                                        <view class=""ub iconfont icon-unlock ufs-32 umar-r10 _i""></view>
+                                        <label class=""ufs-24  _span"">{{item[$orig].useCount||0}}</label>
+                                    </view>
+                                    <view class=""ub ub-f1 ub-pe ufs-24 umar-t10"">{{item[$orig].code||''}}</view>
+                                </view>
+                            </view>
+                            <view class=""ub ub-f1"">
+                                <view class=""ub ufs-24 uc-while uc-b umar-r20"">{{item[$orig].remark||item[$orig].name||lan.list_remark}}</view>
+                            </view>
+                            <view class=""ub ub-ver"">
+                                <view class=""ub uw ub-pe uc-grey ufs-22 upad-10"">
+                                    <view class=""ub"" wx:if=""{{item[$orig].electricityTime}}"">{{item.g5}}</view>{{''+item[$orig].electricity+'%'}}</view>
+                                <view class=""uw uh-10 ubor-r"" style=""background-color:#2B2F3D;"">
+                                    <view class=""{{['ubgc-red','uh','ubor-r',item[$orig].electricity>10?'ubgc-blue':'']}}"" style=""{{'width:'+item[$orig].electricity+'%'+';'}}""></view>
+                                </view>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+",T3,F1,S1
+20,"""/pages/index/deviceDetail/deviceDetail?param="" + JSON.stringify(n)_#T3$toBindDevice","{
+                                    _id: t.form.code
+                                };
+                                ",{'E:/MiniCAT_Linux_sync/dec_dir/wxda28f39391f7372d_dec/pages/index/deviceAdd/deviceAdd.js'},toBindDevice,E:/MiniCAT_Linux_sync/dec_dir/wxda28f39391f7372d_dec/pages/index/deviceAdd/deviceAdd.wxml,"<view class=""ub ub-ver ubgc-while upad-40 umar-40 ubor-r10"">
+                    <view class=""ub ub-ver ub-f1 "">
+                        <view class=""ub ub-pc ufs-32 "">{{lan.title_bindDevice}}</view>
+                        <view class=""ub ub-ver ubgc-while uw  umar-t40"">
+                            <input bindinput=""__e"" class=""uinput-opa ubor-b2 uc-black"" data-event-opts=""{{[ [ 'input',[ [ '__set_model',[ '$0','remark','$event',[] ],['form'] ] ] ] ]}}"" maxlength=""20"" placeholder=""{{lan.title_nameDevice}}"" type=""text"" value=""{{form.remark}}""></input>
+                            <view class=""ub ub-pe umar-t40 uc-black-easy"">{{lan.title_deviceCode+': '+form.code}}</view>
+                            <button bindtap=""__e"" class=""ubgc-blue umar-t100"" data-event-opts=""{{[ [ 'tap',[ ['toBindDevice'] ] ] ]}}"">{{''+(lan.btn_bind||'立即绑定')+''}}</button>
+                        </view>
+                    </view>
+                </view>
+                <view ",T3,F3,S1
+105,"""/pages/index/deviceAuth/deviceAuth?param="" + JSON.stringify(t)_#T1$toAuthManage","{
+                                _id: this.param._id
+                            };
+                            ",{'E:/MiniCAT_Linux_sync/dec_dir/wxda28f39391f7372d_dec/pages/index/deviceMFDetail/deviceMFDetail.js'},toAuthManage,E:/MiniCAT_Linux_sync/dec_dir/wxda28f39391f7372d_dec/pages/index/deviceMFDetail/deviceMFDetail.wxml,"<view class=""ub uc-while umar-t40"">
+                    <view class=""ub ub-ver ub-ac ub-f1"">
+                        <view bindtap=""__e"" class=""ub ub-pc ub-ac  ubor-r uw-120 uh-120 itemBg"" data-event-opts=""{{[ [ 'tap',[ [ 'toUseRecord',['$event'] ] ] ] ]}}"">
+                            <view class=""iconfont icon-liulanjilu  _i"" style=""font-size:60rpx;""></view>
+                        </view>
+                        <view class=""ub ub-pc umar-t20"">使用记录</view>
+                    </view>
+                    <view class=""ub ub-ver ub-ac ub-f1"">
+                        <view bindtap=""__e"" class=""ub ub-pc ub-ac  ubor-r uw-120 uh-120 itemBg"" data-event-opts=""{{[ [ 'tap',[ [ 'toAuthManage',['$event'] ] ] ] ]}}"">
+                            <view class=""iconfont icon-quanxianziyuan  _i"" style=""font-size:60rpx;""></view>
+                        </view>
+                        <view class=""ub ub-pc umar-t20"">授权管理</view>
+                    </view>
+                </view>
+            </view>
+",T1,F3,S1
+7,"""/pages/index/deviceDetail/deviceDetail?param="" + JSON.stringify(o)_#T1$authResult","{
+                                _id: t.data.device
+                            };
+                            ",{'E:/MiniCAT_Linux_sync/dec_dir/wxda28f39391f7372d_dec/common/main.js'},authResult,,,,,S2
+7,"""/pages/index/deviceDetail/deviceDetail?param="" + JSON.stringify(o)_#T1$authResult","{
+                                _id: t.data.device
+                            };
+                            ",{'E:/MiniCAT_Linux_sync/dec_dir/wxda28f39391f7372d_dec/common/main.js'},authResult,,,,,S2
+12,"""/pages/friend/friendAuth/friendAuth?param="" + JSON.stringify(t)_#T3$toFriendAuth","{
+                            _id: this.detail.friend._id
+                        };
+                        ",{'E:/MiniCAT_Linux_sync/dec_dir/wxda28f39391f7372d_dec/pages/friend/friendDetail/friendDetail.js'},toFriendAuth,,,,,S2
+112,"""/pages/index/webView/webView?param="" + JSON.stringify(t)_#T3$toWebView","{
+                            url: encodeURIComponent(n)
+                        };
+                        ",{'E:/MiniCAT_Linux_sync/dec_dir/wxda28f39391f7372d_dec/pages/person/person.js'},toWebView,,,,,S2
+109,"""/pages/index/webView/webView?param="" + JSON.stringify(t)_#T2$toPrivacy","{
+                            url: encodeURIComponent(n)
+                        };
+                        ","{'E:/MiniCAT_Linux_sync/dec_dir/wxda28f39391f7372d_dec/pages/person/login.js', 'E:/MiniCAT_Linux_sync/dec_dir/wxda28f39391f7372d_dec/pages/person/person.js'}",toPrivacy,,,,,S2
+120,"""/pages/index/webView/webView?param="" + JSON.stringify(i)_#T2$toAgreement","{
+                            url: encodeURIComponent(t)
+                        };
+                        ",{'E:/MiniCAT_Linux_sync/dec_dir/wxda28f39391f7372d_dec/pages/index/index.js'},toAgreement,,,,,S2
+59,"""/pages/index/webView/webView?param="" + JSON.stringify(n)_#T3$toWebView","{
+                            url: encodeURIComponent(e)
+                        };
+                        ",{'E:/MiniCAT_Linux_sync/dec_dir/wxda28f39391f7372d_dec/pages/person/aboutUs/aboutUs.js'},toWebView,,,,,S2
+67,"""/pages/person/message/messageDetail?param="" + JSON.stringify(n)_#T3$toListItem","{
+                            _id: this.list.data[e]._id
+                        };
+                        ",{'E:/MiniCAT_Linux_sync/dec_dir/wxda28f39391f7372d_dec/pages/person/message/message.js'},toListItem,,,,,S2
+121,"""/pages/index/webView/webView?param="" + JSON.stringify(i)_#T2$toPrivacy","{
+                            url: encodeURIComponent(t)
+                        };
+                        ",{'E:/MiniCAT_Linux_sync/dec_dir/wxda28f39391f7372d_dec/pages/index/index.js'},toPrivacy,,,,,S2
+55,"""/pages/manage/video/videoDetail?param="" + JSON.stringify(i)_#T3$toListItem","{
+                            _id: this.list.data[t]._id
+                        };
+                        ",{'E:/MiniCAT_Linux_sync/dec_dir/wxda28f39391f7372d_dec/pages/manage/video/video.js'},toListItem,,,,,S2
+48,"""/pages/index/info/infoDetail/infoDetail?param="" + JSON.stringify(i)_#T3$toListItem","{
+                            _id: this.list.data[a]._id
+                        };
+                        ",{'E:/MiniCAT_Linux_sync/dec_dir/wxda28f39391f7372d_dec/pages/index/info/info.js'},toListItem,,,,,S2
+108,"""/pages/index/webView/webView?param="" + JSON.stringify(t)_#T2$toAgreement","{
+                            url: encodeURIComponent(n)
+                        };
+                        ","{'E:/MiniCAT_Linux_sync/dec_dir/wxda28f39391f7372d_dec/pages/person/login.js', 'E:/MiniCAT_Linux_sync/dec_dir/wxda28f39391f7372d_dec/pages/person/person.js'}",toAgreement,,,,,S2
+158,"""/pages/index/deviceAddBlue/deviceAddBlue?param="" + JSON.stringify({
+                                code: """"
+                            })
+                        });
+_#T1$toDeviceAdd","{
+                                code: """"
+                            })
+                        });
+",{'E:/MiniCAT_Linux_sync/dec_dir/wxda28f39391f7372d_dec/pages/index/index.js'},toDeviceAdd,,,,,S2
+179,"""/pages/index/deviceAuth/deviceAuth?param="" + JSON.stringify(t)_#T3$toAuthManage","{
+                            _id: this.param._id
+                        };
+                        ",{'E:/MiniCAT_Linux_sync/dec_dir/wxda28f39391f7372d_dec/pages/index/deviceDetail/deviceDetail.js'},toAuthManage,,,,,S2
+118,"""/pages/index/order/orderList?param="" + JSON.stringify(t)_#T3$toOrderList","{
+                            status: n
+                        };
+                        ",{'E:/MiniCAT_Linux_sync/dec_dir/wxda28f39391f7372d_dec/pages/person/person.js'},toOrderList,,,,,S2
+34,"""/pages/index/deviceAuthTempDetail/deviceAuthTempDetail?param="" + encodeURIComponent(JSON.stringify(n))_#T3$toListItem",this.tabs.data[this.tabs.index].list,"{'E:/MiniCAT_Linux_sync/dec_dir/wxda28f39391f7372d_dec/pages/index/deviceUseRecord/deviceUseRecord.js', 'E:/MiniCAT_Linux_sync/dec_dir/wxda28f39391f7372d_dec/pages/record/record.js', 'E:/MiniCAT_Linux_sync/dec_dir/wxda28f39391f7372d_dec/pages/index/deviceAuth/deviceAuth.js'}",toListItem,,,,,S2
+130,"""/pages/shop/orderDetail/orderDetail?param="" + JSON.stringify(i)_#T3$toListItem",this.list.tab[this.list.index].data,{'E:/MiniCAT_Linux_sync/dec_dir/wxda28f39391f7372d_dec/pages/shop/order/order.js'},toListItem,,,,,S2
+178,"""/pages/index/deviceUpdate/deviceUpdate?param="" + JSON.stringify(t)_#T2$toDeviceUpdate",this.blue.device.versionFinger,{'E:/MiniCAT_Linux_sync/dec_dir/wxda28f39391f7372d_dec/pages/index/deviceDetail/deviceDetail.js'},toDeviceUpdate,,,,,S2
+100,"""/pages/index/deviceUseRecord/deviceUseRecord?param="" + JSON.stringify(t)_#T2$toUseRecord",this.blue.device.user._id,{'E:/MiniCAT_Linux_sync/dec_dir/wxda28f39391f7372d_dec/pages/index/deviceMFDetail/deviceMFDetail.js'},toUseRecord,,,,,S2
+136,"""/pages/shop/goodsDetail/goodsDetail?_id="" + e._id_#T3$toListItem",this.list.data,{'E:/MiniCAT_Linux_sync/dec_dir/wxda28f39391f7372d_dec/pages/shop/shop.js'},toListItem,,,,,S2
+10,"""/pages/friend/friendDetail/friendDetail?param="" + encodeURIComponent(JSON.stringify(i))_#T3$toListItem",this.list.data,{'E:/MiniCAT_Linux_sync/dec_dir/wxda28f39391f7372d_dec/pages/friend/friend.js'},toListItem,,,,,S2
+0,may not url:i_#T3$imgTap,this.childs,{'E:/MiniCAT_Linux_sync/dec_dir/wxda28f39391f7372d_dec/components/mp-html/node/node.js'},imgTap,,,,,S2
+2,may not url:i_#T1$linkTap,this.childs,{'E:/MiniCAT_Linux_sync/dec_dir/wxda28f39391f7372d_dec/components/mp-html/node/node.js'},linkTap,,,,,S2
+159,"""/pages/index/deviceDetail/deviceDetail?param="" + JSON.stringify(n)_#T3$toStartApp",this.param,{'E:/MiniCAT_Linux_sync/dec_dir/wxda28f39391f7372d_dec/pages/index/index.js'},toStartApp,,,,,S2
+133,"""/pages/person/feedbackReversion/feedbackReversion?param="" + JSON.stringify(r)_#T3$toStartApp",this.param,{'E:/MiniCAT_Linux_sync/dec_dir/wxda28f39391f7372d_dec/pages/index/index.js'},toStartApp,,,,,S2
+139,"may not url:t.path.wx + ""?_id="" + t.goods_#T1$toSelectSwiper",t.path.wx,{'E:/MiniCAT_Linux_sync/dec_dir/wxda28f39391f7372d_dec/pages/index/index.js'},toSelectSwiper,,,,,S2
+147,"""/pages/index/deviceMFDetail/deviceMFDetail?isOne=1&_id="" + t.device_#T1$getAuthOne",t.device,{'E:/MiniCAT_Linux_sync/dec_dir/wxda28f39391f7372d_dec/pages/index/index.js'},getAuthOne,,,,,S2
+4,may not url:i_#T2$linkTap,e.attrs,{'E:/MiniCAT_Linux_sync/dec_dir/wxda28f39391f7372d_dec/components/mp-html/node/node.js'},linkTap,,,,,S2
+160,"""/pages/index/deviceDetail/deviceDetail?param="" + JSON.stringify(n)_#T1$shareIn",t.param,{'E:/MiniCAT_Linux_sync/dec_dir/wxda28f39391f7372d_dec/pages/index/index.js'},shareIn,,,,,S2
+6,"""/pages/index/deviceAuthHandel/deviceAuthHandel?param="" + JSON.stringify(o)_#T3$authAsk",t.data,{'E:/MiniCAT_Linux_sync/dec_dir/wxda28f39391f7372d_dec/common/main.js'},authAsk,,,,,S2
+6,"""/pages/index/deviceAuthHandel/deviceAuthHandel?param="" + JSON.stringify(o)_#T3$authAsk",t.data,{'E:/MiniCAT_Linux_sync/dec_dir/wxda28f39391f7372d_dec/common/main.js'},authAsk,,,,,S2
+142,may not url:t.path_#T1$toSelectSwiper,t.path,{'E:/MiniCAT_Linux_sync/dec_dir/wxda28f39391f7372d_dec/pages/index/index.js'},toSelectSwiper,,,,,S2
+111,may not url:t.page_#T1$toSelectMenu,t.page,{'E:/MiniCAT_Linux_sync/dec_dir/wxda28f39391f7372d_dec/pages/person/setting/setting.js'},toSelectMenu,,,,,S2
+116,may not url:n.page_#T1$toSelectMenu,n.page,{'E:/MiniCAT_Linux_sync/dec_dir/wxda28f39391f7372d_dec/pages/person/person.js'},toSelectMenu,,,,,S2
+1,may not url:i_#T1$imgTap,e.a,{'E:/MiniCAT_Linux_sync/dec_dir/wxda28f39391f7372d_dec/components/mp-html/node/node.js'},imgTap,,,,,S2
+211,"may not url:e + ""?param="" + JSON.stringify(n || {})_#T2$toPage",{},{'E:/MiniCAT_Linux_sync/dec_dir/wxda28f39391f7372d_dec/common/vendor.js'},toPage,,,,,S2
+211,"may not url:e + ""?param="" + JSON.stringify(n || {})_#T2$toPage",{},{'E:/MiniCAT_Linux_sync/dec_dir/wxda28f39391f7372d_dec/common/vendor.js'},toPage,,,,,S2

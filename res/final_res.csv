@@ -1,0 +1,2 @@
+wechat_app_id,potential_vuln_count,T1_vuln,T2_vuln,T3_vuln,independent_url_count,ind_T1_vuln,ind_T2_vuln,ind_T3_vuln
+wxda28f39391f7372d,212,27,39,146,32,4,4,24
