@@ -9,7 +9,6 @@ import csv
 import shutil
 import requests
 
-# openai_key = "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"
 
 def path_remake(path):
     return path.replace('\\', '/')
