@@ -97,6 +97,12 @@ python3 mutli_query_reborn.py
 
 The code in this repository is licensed under the [MIT License](https://github.com/github/codeql/blob/main/LICENSE) by [GitHub](https://github.com/).
 
+## Supplementary
+
+Due to the 15-page limitation of the CCS camera-ready version, we move our **Security Risk Notification Letter** and **Table: Cases of risky mini-programs existing on multiple platforms** from Appendix to the supplementary directory of this repo.
+
+Also, a longer version of our paper can be found [here](https://kee1ongz.github.io/paper/ccs24-zhang.pdf).
+
 ## Citation
 
 If you create research work that uses our tool, please cite our paper:
