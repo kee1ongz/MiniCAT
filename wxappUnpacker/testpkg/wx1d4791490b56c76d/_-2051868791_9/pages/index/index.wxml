@@ -1,1 +1,0 @@
-<web-view binderror="binderrorLoad" bindload="bindloading" bindmessage="bindmessage" src="{{MY_HOME}}"></web-view>

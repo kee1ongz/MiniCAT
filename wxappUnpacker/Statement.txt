@@ -1,0 +1,7 @@
+=== Statement ===
+
+MiniCAT relies on wxappUnpacker to unpack mini-programs. 
+Due to potential legal implications, we DO NOT provide wxappUnpacker in our repository. 
+
+Users should find and copy it to here by themselves or use pre-unpacked mini-programs for analysis.
+
