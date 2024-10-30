@@ -9,7 +9,7 @@ fi
 
 # Check Python version
 PYTHON_VERSION=$(python3 --version 2>&1)
-if [[ $PYTHON_VERSION == *"Python 3."* && ${PYTHON_VERSION:7:1} -ge 6 ]]; then
+if [[ $PYTHON_VERSION == *"Python 3."* && ${PYTHON_VERSION:9:1} -ge 6 ]]; then
     echo "Python version is OK: $PYTHON_VERSION"
 else
     if [[ $PYTHON_VERSION == *"Python 2."* ]]; then
